@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Tutorial | ChituBytes</title>
+  <link rel="stylesheet" href="css.css"> <!-- reuse same CSS -->
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="logo">ChituBytes</div>
+  <nav class="nav-links">
+    <a href="../../index.html">Home</a>
+    <a href="../../explore/explore.html">Course</a>
+    <a href="../tutorial.html">Tutorials</a>
+    <a href="../../blog/blog.html">Blog</a>
+    <a href="../notes.html">Notes</a>
+    <a href="../../contact/contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="lang-hero">
+  <h1>CSS Tutorial</h1>
+  <p>Beginner to Advanced • Styling Web Pages • Responsive Design</p>
+</section>
+
+<!-- ===== CONTENT WRAPPER ===== -->
+<section class="lang-container">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <h3>CSS Topics</h3>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#setup">Setup</a></li>
+      <li><a href="#selectors">Selectors</a></li>
+      <li><a href="#colors">Colors</a></li>
+      <li><a href="#fonts">Fonts</a></li>
+      <li><a href="#boxmodel">Box Model</a></li>
+      <li><a href="#positioning">Positioning</a></li>
+      <li><a href="#flexbox">Flexbox</a></li>
+      <li><a href="#grid">Grid</a></li>
+      <li><a href="#animations">Animations</a></li>
+      <li><a href="#responsive">Responsive Design</a></li>
+      <li><a href="#examples">Example Programs</a></li>
+    </ul>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="content">
+
+    <h2 id="intro">Introduction to CSS</h2>
+    <p class="text">
+      CSS (Cascading Style Sheets) is used to style HTML elements.  
+      It allows you to control layouts, colors, fonts, spacing, and animations.
+    </p>
+
+    <h2 id="setup">Setup</h2>
+    <p class="text">
+      You can write CSS in three ways: Inline, Internal, and External.  
+      For detailed guide:
+      <a href="csssetup.pdf" target="_blank">Open PDF</a>
+      <a href="csssetup.pdf" download>Download PDF</a>
+    </p>
+
+    <h2 id="selectors">Selectors</h2>
+    <pre><code>
+/* Select by element */
+p {
+  color: blue;
+}
+
+/* Select by class */
+.container {
+  padding: 20px;
+}
+
+/* Select by id */
+#main {
+  margin: 10px;
+}
+    </code></pre>
+    <button class="copy-btn" onclick="copyCssCode1()">Copy Code</button>
+
+    <h2 id="colors">Colors</h2>
+    <pre><code>
+body {
+  background-color: #020617;
+  color: #e5e7eb;
+}
+    </code></pre>
+    <button class="copy-btn" onclick="copyCssCode2()">Copy Code</button>
+
+    <h2 id="fonts">Fonts</h2>
+    <pre><code>
+p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+}
+    </code></pre>
+
+    <h2 id="boxmodel">Box Model</h2>
+    <pre><code>
+div {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #38bdf8;
+  margin: 10px;
+}
+    </code></pre>
+
+    <h2 id="positioning">Positioning</h2>
+    <pre><code>
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+    </code></pre>
+
+    <h2 id="flexbox">Flexbox</h2>
+    <pre><code>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    </code></pre>
+
+    <h2 id="grid">Grid</h2>
+    <pre><code>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+    </code></pre>
+
+    <h2 id="animations">Animations</h2>
+    <pre><code>
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.element {
+  animation: slideUp 1s ease;
+}
+    </code></pre>
+
+    <h2 id="responsive">Responsive Design</h2>
+    <pre><code>
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+    </code></pre>
+
+    <h2>Download Notes</h2>
+    <a class="download" href="#">📄 CSS Short Notes (PDF)</a>
+    <a class="download" href="#">📘 CSS Example Programs (PDF)</a>
+
+  </main>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 ChituBytes • Learn Coding the Right Way
+</footer>
+
+<script>
+function copyCssCode1() {
+  navigator.clipboard.writeText(`p { color: blue; } .container { padding: 20px; } #main { margin: 10px; }`);
+  alert("Code copied!");
+}
+function copyCssCode2() {
+  navigator.clipboard.writeText(`body { background-color: #020617; color: #e5e7eb; }`);
+  alert("Code copied!");
+}
+</script>
+
+</body>
+</html>

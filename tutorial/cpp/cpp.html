@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>C++ Tutorial | ChituBytes</title>
+  <link rel="stylesheet" href="cpp.css"> <!-- reuse same CSS -->
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="logo">ChituBytes</div>
+  <nav class="nav-links">
+    <a href="../../index.html">Home</a>
+    <a href="../../explore/explore.html">Course</a>
+    <a href="../tutorial.html">Tutorials</a>
+    <a href="../../blog/blog.html">Blog</a>
+    <a href="../notes.html">Notes</a>
+    <a href="../../contact/contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="lang-hero">
+  <h1>C++ Tutorial</h1>
+  <p>Beginner to Advanced • OOP Programming • Exam Oriented</p>
+</section>
+
+<!-- ===== CONTENT WRAPPER ===== -->
+<section class="lang-container">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <h3>C++ Topics</h3>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#setup">Setup</a></li>
+      <li><a href="#syntax">Syntax</a></li>
+      <li><a href="#variables">Variables</a></li>
+      <li><a href="#datatypes">Data Types</a></li>
+      <li><a href="#operators">Operators</a></li>
+      <li><a href="#loops">Loops</a></li>
+      <li><a href="#arrays">Arrays</a></li>
+      <li><a href="#functions">Functions</a></li>
+      <li><a href="#oop">OOP Concepts</a></li>
+      <li><a href="#fileio">File I/O</a></li>
+      <li><a href="#examples">Example Programs</a></li>
+    </ul>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="content">
+
+    <h2 id="intro">Introduction to C++</h2>
+    <p class="text">
+      C++ is an extension of C language that supports Object-Oriented Programming (OOP).  
+      It is widely used for system software, game development, and competitive programming.
+    </p>
+
+    <h2 id="setup">Setup</h2>
+    <p class="text">
+      You can install C++ using GCC or Code::Blocks IDE.  
+      For detailed setup guide: 
+      <a href="cppsetup.pdf" target="_blank">Open PDF</a>
+      <a href="cppsetup.pdf" download>Download PDF</a>
+    </p>
+
+    <h2 id="syntax">C++ Syntax</h2>
+    <p class="text">
+      C++ programs start with <code>#include</code> statements and the <code>main()</code> function.  
+      Statements end with a semicolon (;).
+    </p>
+
+    <h2>Sample C++ Program</h2>
+    <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello ChituBytes!" &lt;&lt; endl;
+    return 0;
+}
+    </code></pre>
+    <button class="copy-btn" onclick="copyCppCode1()">Copy Code</button>
+
+    <h2 id="variables">Variables in C++</h2>
+    <p class="text">
+      Variables store data values and must be declared with a data type.  
+      Example: <code>int age = 20;</code>  
+      <a href="cpp_variables.pdf" target="_blank">Open PDF</a>
+      <a href="cpp_variables.pdf" download>Download PDF</a>
+    </p>
+
+    <h2>Sample Variable Program</h2>
+    <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 10;
+    int b = 20;
+    int sum = a + b;
+    cout &lt;&lt; "Sum = " &lt;&lt; sum &lt;&lt; endl;
+    return 0;
+}
+    </code></pre>
+    <button class="copy-btn" onclick="copyCppCode2()">Copy Code</button>
+
+    <h2 id="arrays">Arrays in C++</h2>
+    <p class="text">
+      Arrays store multiple values of the same data type.  
+      Example: <code>int numbers[5] = {1,2,3,4,5};</code>
+    </p>
+
+    <h2 id="functions">Functions</h2>
+    <p class="text">
+      Functions are reusable blocks of code.  
+      Example:
+      <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+void greet() {
+    cout &lt;&lt; "Hello ChituBytes!" &lt;&lt; endl;
+}
+
+int main() {
+    greet();
+    return 0;
+}
+      </code></pre>
+    </p>
+
+    <h2 id="oop">OOP Concepts</h2>
+    <p class="text">
+      C++ supports Object-Oriented Programming (OOP) using classes and objects.  
+      Example:
+      <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Student {
+public:
+    string name;
+    void greet() {
+        cout &lt;&lt; "Hello, " &lt;&lt; name &lt;&lt; endl;
+    }
+};
+
+int main() {
+    Student s;
+    s.name = "ChituBytes";
+    s.greet();
+    return 0;
+}
+      </code></pre>
+    </p>
+
+    <h2>Download Notes</h2>
+    <a class="download" href="#">📄 C++ Short Notes (PDF)</a>
+    <a class="download" href="#">📘 C++ Programs PDF</a>
+
+  </main>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 ChituBytes • Learn Coding the Right Way
+</footer>
+
+<script>
+function copyCppCode1() {
+  navigator.clipboard.writeText('#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << "Hello ChituBytes!" << endl;\n    return 0;\n}');
+  alert("Code copied!");
+}
+
+function copyCppCode2() {
+  navigator.clipboard.writeText('#include <iostream>\nusing namespace std;\nint main() {\n    int a=10, b=20;\n    int sum=a+b;\n    cout << "Sum = " << sum << endl;\n    return 0;\n}');
+  alert("Code copied!");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>C Programming Tutorial | ChituBytes</title>
+  <link rel="stylesheet" href="c.css"> <!-- reuse same CSS -->
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="logo">ChituBytes</div>
+  <nav class="nav-links">
+    <a href="../../index.html">Home</a>
+    <a href="../../explore/explore.html">Course</a>
+    <a href="../tutorial.html">Tutorials</a>
+    <a href="../../blog/blog.html">Blog</a>
+    <a href="../notes.html">Notes</a>
+    <a href="../../contact/contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="lang-hero">
+  <h1>C Programming Tutorial</h1>
+  <p>Beginner to Advanced • Procedural Programming • Exam Oriented</p>
+</section>
+
+<!-- ===== CONTENT WRAPPER ===== -->
+<section class="lang-container">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <h3>C Topics</h3>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#setup">Setup</a></li>
+      <li><a href="#syntax">Syntax</a></li>
+      <li><a href="#variables">Variables</a></li>
+      <li><a href="#datatypes">Data Types</a></li>
+      <li><a href="#operators">Operators</a></li>
+      <li><a href="#loops">Loops</a></li>
+      <li><a href="#arrays">Arrays</a></li>
+      <li><a href="#functions">Functions</a></li>
+      <li><a href="#pointers">Pointers</a></li>
+      <li><a href="#fileio">File I/O</a></li>
+      <li><a href="#examples">Example Programs</a></li>
+    </ul>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="content">
+
+    <h2 id="intro">Introduction to C</h2>
+    <p class="text">
+      C is a high-level, general-purpose programming language developed in the 1970s.
+      It is widely used for system programming, embedded systems, and application development.
+    </p>
+
+    <h2 id="setup">Setup</h2>
+    <p class="text">
+      You can install a C compiler using GCC on Windows, Linux, or Mac.  
+      For detailed installation guide:
+      <a href="csetup.pdf" target="_blank">Open PDF</a>
+      <a href="csetup.pdf" download>Download PDF</a>
+    </p>
+
+    <h2 id="syntax">C Syntax</h2>
+    <p class="text">
+      C programs start with <code>#include</code> statements and the <code>main()</code> function.  
+      Each statement ends with a semicolon (;).
+    </p>
+
+    <h2>Sample C Program</h2>
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello ChituBytes!\n");
+    return 0;
+}
+    </code></pre>
+    <button class="copy-btn" onclick="copyCCode1()">Copy Code</button>
+
+    <h2 id="variables">Variables in C</h2>
+    <p class="text">
+      Variables store data values. Must be declared with a data type.  
+      Example: <code>int age = 20;</code>  
+      <a href="c_variables.pdf" target="_blank">Open PDF</a>
+      <a href="c_variables.pdf" download>Download PDF</a>
+    </p>
+
+    <h2>Sample Variable Program</h2>
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 10;
+    int b = 20;
+    int sum = a + b;
+    printf("Sum = %d", sum);
+    return 0;
+}
+    </code></pre>
+    <button class="copy-btn" onclick="copyCCode2()">Copy Code</button>
+
+    <h2 id="arrays">Arrays in C</h2>
+    <p class="text">
+      Arrays store multiple values of the same data type.  
+      Example: <code>int numbers[5] = {1,2,3,4,5};</code>
+    </p>
+
+    <h2 id="functions">Functions</h2>
+    <p class="text">
+      Functions are reusable blocks of code.  
+      Example:
+      <pre><code>
+#include &lt;stdio.h&gt;
+
+void greet() {
+    printf("Hello ChituBytes!\n");
+}
+
+int main() {
+    greet();
+    return 0;
+}
+      </code></pre>
+    </p>
+
+    <h2>Download Notes</h2>
+    <a class="download" href="#">📄 C Short Notes (PDF)</a>
+    <a class="download" href="#">📘 C Programs PDF</a>
+
+  </main>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 ChituBytes • Learn Coding the Right Way
+</footer>
+
+<script>
+function copyCCode1() {
+  navigator.clipboard.writeText('#include <stdio.h>\n\nint main() {\n    printf("Hello ChituBytes!\\n");\n    return 0;\n}');
+  alert("Code copied!");
+}
+
+function copyCCode2() {
+  navigator.clipboard.writeText('#include <stdio.h>\n\nint main() {\n    int a=10, b=20;\n    int sum = a+b;\n    printf("Sum = %d", sum);\n    return 0;\n}');
+  alert("Code copied!");
+}
+</script>
+
+</body>
+</html>

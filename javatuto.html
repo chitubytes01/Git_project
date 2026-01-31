@@ -1,0 +1,176 @@
+<!-- ===== CATEGORIES ===== -->
+<section class="categories">
+  <div class="cat-card">Java <a href="javaTuto.html"></a></div>
+  <div class="cat-card">Python</div>
+  <div class="cat-card">C</div>
+  <div class="cat-card">C++</div>
+  <div class="cat-card">HTML</div>
+  <div class="cat-card">CSS</div>
+  <div class="cat-card">JavaScript</div>
+  <div class="cat-card">PHP</div>
+ <!-- <div class="cat-card">SQL</div> -->
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutorials | ChituBytes</title>
+  <link rel="stylesheet" href="tutorial.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<div class="header">
+  <div class="profile">
+    <img src="pic/self.jpg" alt="Logo">
+    <h3>ChituBytes</h3>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="explore.html" class="active">Courses</a>
+    <a href="blog.html">Blog</a>
+    <a href="notes.html">Notes</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="tutorial-hero">
+  <h1>Programming Tutorials</h1>
+  <p>Click a language to explore roadmap, lessons & examples</p>
+</section>
+
+
+<!-- ===== ROADMAP ===== -->
+<section class="roadmap" id="roadmap"></section>
+
+<!-- ===== LESSONS ===== -->
+<section class="lessons" id="lessons"></section>
+
+<!-- ===== CODE EXAMPLE ===== -->
+<section class="code-example" id="code"></section>
+
+<!-- ===== PRACTICE ===== -->
+<section class="practice" id="practice"></section>
+
+<!-- ===== NOTES ===== -->
+<section class="notes-download" id="notes"></section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 ChituBytes | Learn Coding the Right Way
+</footer>
+
+<!-- ===== SCRIPT ===== -->
+<script>
+const data = {
+  java: {
+    roadmap: `
+      <h2>Java Learning Roadmap</h2>
+      <ul>
+        <li>Introduction to Java</li>
+        <li>JDK, JRE & JVM</li>
+        <li>Variables & Data Types</li>
+        <li>OOP Concepts</li>
+        <li>Exception Handling</li>
+        <li>Mini Projects</li>
+      </ul>
+    `,
+    lessons: `
+      <h2>Java Lessons</h2>
+      <div class="lesson-card">
+        <h3>Java Basics</h3>
+        <p>Syntax, variables & structure</p>
+      </div>
+      <div class="lesson-card">
+        <h3>OOP in Java</h3>
+        <p>Classes, Objects, Inheritance</p>
+      </div>
+    `,
+    code: `
+      <h2>Java Example</h2>
+      <pre><code id="codeText">
+class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello Java");
+  }
+}
+      </code></pre>
+      <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+    `,
+    practice: `
+      <h2>Practice</h2>
+      <ul>
+        <li>Print even numbers</li>
+        <li>Explain JVM</li>
+      </ul>
+    `,
+    notes: `
+      <h2>Download Notes</h2>
+      <a href="#">📄 Java Notes PDF</a>
+    `
+  },
+
+  html: {
+    roadmap: `
+      <h2>HTML Learning Roadmap</h2>
+      <ul>
+        <li>HTML Structure</li>
+        <li>Text & Images</li>
+        <li>Forms & Tables</li>
+      </ul>
+    `,
+    lessons: `
+      <h2>HTML Lessons</h2>
+      <div class="lesson-card">
+        <h3>HTML Basics</h3>
+        <p>Tags, elements, attributes</p>
+      </div>
+    `,
+    code: `
+      <h2>HTML Example</h2>
+      <pre><code id="codeText">
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Hello HTML</h1>
+  </body>
+</html>
+      </code></pre>
+      <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+    `,
+    practice: `
+      <h2>Practice</h2>
+      <ul>
+        <li>Create a form</li>
+        <li>Add an image</li>
+      </ul>
+    `,
+    notes: `
+      <h2>Download Notes</h2>
+      <a href="#">📄 HTML Notes PDF</a>
+    `
+  }
+};
+
+function loadTutorial(lang) {
+  document.getElementById("roadmap").innerHTML = data[lang].roadmap;
+  document.getElementById("lessons").innerHTML = data[lang].lessons;
+  document.getElementById("code").innerHTML = data[lang].code;
+  document.getElementById("practice").innerHTML = data[lang].practice;
+  document.getElementById("notes").innerHTML = data[lang].notes;
+}
+
+function copyCode() {
+  const code = document.getElementById("codeText").innerText;
+  navigator.clipboard.writeText(code);
+  alert("Code copied!");
+}
+
+// Load Java by default
+loadTutorial("java");
+</script>
+</body>
+</html>

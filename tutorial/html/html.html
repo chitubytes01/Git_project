@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Tutorial | ChituBytes</title>
+  <link rel="stylesheet" href="html.css"> <!-- reuse same CSS -->
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="logo">ChituBytes</div>
+  <nav class="nav-links">
+    <a href="../../index.html">Home</a>
+    <a href="../../explore/explore.html">Course</a>
+    <a href="../tutorial.html">Tutorials</a>
+    <a href="../../blog/blog.html">Blog</a>
+    <a href="../notes.html">Notes</a>
+    <a href="../../contact/contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="lang-hero">
+  <h1>HTML Tutorial</h1>
+  <p>Beginner to Advanced • Web Development • Frontend</p>
+</section>
+
+<!-- ===== CONTENT WRAPPER ===== -->
+<section class="lang-container">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <h3>HTML Topics</h3>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#setup">Setup</a></li>
+      <li><a href="#basicstructure">Basic Structure</a></li>
+      <li><a href="#headings">Headings</a></li>
+      <li><a href="#paragraphs">Paragraphs</a></li>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#images">Images</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#examples">Example Programs</a></li>
+    </ul>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="content">
+
+    <h2 id="intro">Introduction to HTML</h2>
+    <p class="text">
+      HTML (HyperText Markup Language) is the standard language used to create web pages.  
+      It structures content on the web using tags.
+    </p>
+
+    <h2 id="setup">Setup</h2>
+    <p class="text">
+      You only need a browser and a text editor to start HTML coding.  
+      For detailed guide:
+      <a href="htmlsetup.pdf" target="_blank">Open PDF</a>
+      <a href="htmlsetup.pdf" download>Download PDF</a>
+    </p>
+
+    <h2 id="basicstructure">Basic Structure</h2>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello ChituBytes!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+    <button class="copy-btn" onclick="copyHtmlCode1()">Copy Code</button>
+
+    <h2 id="headings">Headings</h2>
+    <p class="text">
+      HTML supports 6 heading levels: &lt;h1&gt; to &lt;h6&gt;.  
+      Example:
+      <pre><code>
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Sub Heading&lt;/h2&gt;
+      </code></pre>
+    </p>
+
+    <h2 id="paragraphs">Paragraphs</h2>
+    <p class="text">
+      Paragraphs are created using &lt;p&gt; tag.  
+      Example:
+      <pre><code>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+      </code></pre>
+    </p>
+
+    <h2 id="links">Links</h2>
+    <p class="text">
+      Links are created using &lt;a&gt; tag.  
+      Example:
+      <pre><code>
+&lt;a href="https://www.chitubytes.com"&gt;Visit ChituBytes&lt;/a&gt;
+      </code></pre>
+    </p>
+
+    <h2 id="images">Images</h2>
+    <p class="text">
+      Images are displayed using &lt;img&gt; tag.  
+      Example:
+      <pre><code>
+&lt;img src="pic/self.jpg" alt="ChituBytes"&gt;
+      </code></pre>
+    </p>
+
+    <h2 id="lists">Lists</h2>
+    <p class="text">
+      HTML supports ordered &lt;ol&gt; and unordered &lt;ul&gt; lists.  
+      Example:
+      <pre><code>
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+      </code></pre>
+    </p>
+
+    <h2 id="tables">Tables</h2>
+    <p class="text">
+      Tables are created using &lt;table&gt;, &lt;tr&gt;, &lt;td&gt; tags.  
+      Example:
+      <pre><code>
+&lt;table&gt;
+  &lt;tr&gt;&lt;td&gt;Name&lt;/td&gt;&lt;td&gt;Age&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Chitu&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+      </code></pre>
+    </p>
+
+    <h2 id="forms">Forms</h2>
+    <p class="text">
+      Forms are created using &lt;form&gt; tag with inputs.  
+      Example:
+      <pre><code>
+&lt;form&gt;
+  &lt;input type="text" name="username"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+      </code></pre>
+    </p>
+
+    <h2 id="examples">Example HTML Page</h2>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;My Page&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello ChituBytes&lt;/h1&gt;
+  &lt;p&gt;This is my first web page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+    <button class="copy-btn" onclick="copyHtmlCode2()">Copy Code</button>
+
+    <h2>Download Notes</h2>
+    <a class="download" href="#">📄 HTML Short Notes (PDF)</a>
+    <a class="download" href="#">📘 HTML Example Pages (PDF)</a>
+
+  </main>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 ChituBytes • Learn Coding the Right Way
+</footer>
+
+<script>
+function copyHtmlCode1() {
+  navigator.clipboard.writeText(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Page</title>
+</head>
+<body>
+    <h1>Hello ChituBytes!</h1>
+</body>
+</html>`);
+  alert("Code copied!");
+}
+
+function copyHtmlCode2() {
+  navigator.clipboard.writeText(`<!DOCTYPE html>
+<html>
+<head><title>My Page</title></head>
+<body>
+  <h1>Hello ChituBytes</h1>
+  <p>This is my first web page.</p>
+</body>
+</html>`);
+  alert("Code copied!");
+}
+</script>
+
+</body>
+</html>

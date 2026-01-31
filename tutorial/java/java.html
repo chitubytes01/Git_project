@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Java Tutorial | ChituBytes</title>
+  <link rel="stylesheet" href="java.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR (NO TOP SPACE) ===== -->
+<header class="navbar">
+  <div class="logo">ChituBytes</div>
+  <nav class="nav-links">
+    <a href="../../index.html">Home</a>
+    <a href="../../explore/explore.html">Course</a>
+    <a href="../tutorial.html">Tutorials</a>
+    <a href="../../blog/blog.html">Blog</a>
+    <a href="../note/notes.html">Notes</a>
+    <a href="../../contact/contact.html">Contact</a>
+    
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="lang-hero">
+  <h1>Java Programming Tutorial</h1>
+  <p>Beginner to Advanced • Industry Ready • Exam Oriented</p>
+</section>
+
+<!-- ===== CONTENT WRAPPER ===== -->
+<section class="lang-container">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <h3>Java Topics</h3>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#install">Instalation</a></li>
+      <li><a href="#jdk">JDK, JRE, JVM</a></li>
+      <li><a href="#datatype">Data Types</a></li>
+      <li><a href="#Variables">Variables</a></li>
+      <li><a href="#string">String</a></li>
+      <li><a href="#input">User Input</a></li>
+      <li><a href="#array">Array</a></li>
+      <li><a href="#">Control Statements</a></li>
+      <li><a href="#">OOP Concepts</a></li>
+      <li><a href="#">Exception Handling</a></li>
+      <li><a href="#">File Handling</a></li>
+      <li><a href="#questions">Practice Questions</a></li>
+    </ul>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="content">
+
+    <h2 id="intro">Introduction to Java</h2>
+    <p>
+      Java is a high-level, object-oriented, platform-independent
+      programming language developed by Sun Microsystems.
+      It is widely used in web applications, Android apps,
+      enterprise software, and backend systems.
+    </p>
+
+    <h2>Why Learn Java?</h2>
+    <ul>
+      <li>Platform independent</li>
+      <li>High demand in jobs</li>
+      <li>Strong OOP concepts</li>
+      <li>Used in enterprise & Android</li>
+    </ul>
+
+    <h2 id="install">Download and install</h2>
+    <p class="text">
+      TO easy Download and install Open the PDF or download
+      <a href="javainstall.pdf" target="_blank">Open PDF</a>
+      <a href="javainstall.pdf" download>Download PDF</a>
+    </p>
+
+    
+    <h2>Sample Java Program</h2>
+    <pre><code>
+class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello ChituBytes!");
+  }
+}
+    </code></pre>
+
+    <button class="copy-btn">Copy Code</button>
+<h2 id="jdk">JDK JRE JVM</h2>
+<p class="text">
+  JDK- Java Developmemnt Kit
+  JRE- Java Run Time
+  JVM- Java Vartual Machime
+
+     for more detail click on pdf
+    <a href="jdk.pdf" target="_blank">Open PDF</a>
+    <a href="jdk.pdf" download>Download PDF</a>
+</p>
+
+<h2 id="datatype">Data Types</h2>
+<p class="text">
+  A data type specifies the type of data a variable can store.
+  It tells the computer how much memory to allocate and what operations can be performed on the data.
+  
+  for details click here:
+  <a href="datatype.pdf" target="_blank">Open PDF</a>
+  <a href="datatype.pdf" download>Download PDF</a>
+</p>
+
+<h2 id="Variables">Varaiables</h2>
+<p class="text">
+  🔹 What is a Variable?
+        ->A variable is a container used to store data (values) in a program.
+        👉 The value can change, that’s why it’s called a variable.
+
+        Decleration and Rules: click here
+        <a href="variables.pdf" target="_blank">Open PDF</a>
+        <a href="variables.pdf" download>Download PDF</a>
+</p>
+<h2>Sample variable Program</h2>
+    <pre><code>
+      class AllVariables {
+        int a = 10;
+        static int b = 20;
+    
+        void show() {
+            int c = 30;
+    
+            System.out.println("Instance variable a = " + a);
+            System.out.println("Static variable b = " + b);
+            System.out.println("Local variable c = " + c);
+        }
+    
+        public static void main(String args[]) {
+            AllVariables obj = new AllVariables();
+            obj.show();
+        }
+    }
+    
+    </code></pre>
+
+    <button class="copy-btn">Copy Code</button>
+
+    <h2 id="string">Strings</h2>
+    <p class="text">
+      🔹 Strings
+        A String is a sequence of characters used to store and manipulate text.
+
+        for more click here:
+        <a href="string.pdf" target="_blank">Open PDF</a>
+        <a href="string.pdf" download>Download PDF</a>
+    </p>
+    <h2 id="input">User Input</h2>
+    <p class="text">
+      to take user input in java we use scanner metho.
+      click here:
+      <a href="input.pdf" target="_blank">Open PDF</a>
+      <a href="input.pdf" download>Download PDF</a>
+    </p>
+
+    <h2 id="Array">Array in java </h2>
+      <p class="text">
+        An array is a collection of elements of the same data type stored in contiguous memory
+        locations and accessed using a single variable name with an index.
+        An array stores multiple values of the same type in a single variable.
+      </p>
+      <img src="arr.png" alt="Flower" style="width:400px; height:150px;">
+
+    <h2 id="questions">Practice Questions</h2>
+    <p class="text">
+        You must need to practice these questions
+        Download this PDF
+        <a href="javaquestions.pdf" target="_blank">Open PDF</a>
+        <a href="javaquestions.pdf" download>Download PDF</a>
+    </p>
+
+    <h2>Download Notes</h2>
+    <a class="download" href="#">📄 Java Short Notes (PDF)</a>
+    <a class="download" href="#">📘 Java Programs PDF</a>
+
+  </main>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 ChituBytes • Learn Coding the Right Way
+</footer>
+
+<script>
+document.querySelector(".copy-btn").onclick = () => {
+  navigator.clipboard.writeText(
+`class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello ChituBytes!");
+  }
+}`
+  );
+  alert("Code copied!");
+};
+</script>
+</body>
+</html>

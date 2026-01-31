@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Tutorial | ChituBytes</title>
+  <link rel="stylesheet" href="javascript.css"> <!-- reuse same CSS -->
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="logo">ChituBytes</div>
+  <nav class="nav-links">
+    <a href="../../index.html">Home</a>
+    <a href="../../explore/explore.html">Course</a>
+    <a href="../tutorial.html">Tutorials</a>
+    <a href="../../blog/blog.html">Blog</a>
+    <a href="../note/notes.html">Notes</a>
+    <a href="../../contact/contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="lang-hero">
+  <h1>JavaScript Tutorial</h1>
+  <p>Beginner to Advanced • Web Development • Frontend & Backend</p>
+</section>
+
+<!-- ===== CONTENT WRAPPER ===== -->
+<section class="lang-container">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <h3>JavaScript Topics</h3>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#setup">Setup</a></li>
+      <li><a href="#syntax">Syntax</a></li>
+      <li><a href="#variables">Variables</a></li>
+      <li><a href="#datatypes">Data Types</a></li>
+      <li><a href="#operators">Operators</a></li>
+      <li><a href="#functions">Functions</a></li>
+      <li><a href="#loops">Loops</a></li>
+      <li><a href="#arrays">Arrays</a></li>
+      <li><a href="#objects">Objects</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#dom">DOM Manipulation</a></li>
+      <li><a href="#examples">Example Programs</a></li>
+    </ul>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="content">
+
+    <h2 id="intro">Introduction to JavaScript</h2>
+    <p class="text">
+      JavaScript is a high-level, interpreted programming language used for web development.  
+      It enables interactive web pages and dynamic content.
+    </p>
+
+    <h2 id="setup">Setup</h2>
+    <p class="text">
+      You only need a browser to run JavaScript.  
+      For editors, you can use VS Code, Sublime, or Notepad++.  
+      Detailed guide:
+      <a href="jssetup.pdf" target="_blank">Open PDF</a>
+      <a href="jssetup.pdf" download>Download PDF</a>
+    </p>
+
+    <h2 id="syntax">JavaScript Syntax</h2>
+    <pre><code>
+console.log("Hello ChituBytes!");
+    </code></pre>
+    <button class="copy-btn" onclick="copyJsCode1()">Copy Code</button>
+
+    <h2 id="variables">Variables in JavaScript</h2>
+    <p class="text">
+      Variables store data values.  
+      JS supports <code>var</code>, <code>let</code>, and <code>const</code>.  
+      Example:
+      <pre><code>
+let name = "ChituBytes";
+const pi = 3.14;
+      </code></pre>
+      <a href="js_variables.pdf" target="_blank">Open PDF</a>
+      <a href="js_variables.pdf" download>Download PDF</a>
+    </p>
+
+    <h2 id="functions">Functions</h2>
+    <pre><code>
+function greet() {
+    console.log("Hello ChituBytes!");
+}
+greet();
+    </code></pre>
+    <button class="copy-btn" onclick="copyJsCode2()">Copy Code</button>
+
+    <h2 id="arrays">Arrays</h2>
+    <pre><code>
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers[0]); // 1
+    </code></pre>
+    <button class="copy-btn" onclick="copyJsCode3()">Copy Code</button>
+
+    <h2 id="objects">Objects</h2>
+    <pre><code>
+let student = {
+    name: "ChituBytes",
+    age: 25
+};
+console.log(student.name);
+    </code></pre>
+
+    <h2 id="events">Events</h2>
+    <p class="text">
+      JavaScript can respond to user actions like clicks.  
+      Example:
+      <pre><code>
+<button onclick="alert('Hello ChituBytes!')">Click Me</button>
+      </code></pre>
+    </p>
+
+    <h2 id="dom">DOM Manipulation</h2>
+    <pre><code>
+document.getElementById("demo").innerHTML = "Hello ChituBytes!";
+    </code></pre>
+
+    <h2>Download Notes</h2>
+    <a class="download" href="#">📄 JavaScript Short Notes (PDF)</a>
+    <a class="download" href="#">📘 JavaScript Example Programs (PDF)</a>
+
+  </main>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 ChituBytes • Learn Coding the Right Way
+</footer>
+
+<script>
+function copyJsCode1() {
+  navigator.clipboard.writeText('console.log("Hello ChituBytes!");');
+  alert("Code copied!");
+}
+function copyJsCode2() {
+  navigator.clipboard.writeText('function greet() {\n    console.log("Hello ChituBytes!");\n}\ngreet();');
+  alert("Code copied!");
+}
+function copyJsCode3() {
+  navigator.clipboard.writeText('let numbers = [1,2,3,4,5];\nconsole.log(numbers[0]);');
+  alert("Code copied!");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PHP Tutorial | ChituBytes</title>
+  <link rel="stylesheet" href="php.css"> <!-- reuse same CSS -->
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="logo">ChituBytes</div>
+  <nav class="nav-links">
+    <a href="../../index.html">Home</a>
+    <a href="../../explore/explore.html">Course</a>
+    <a href="../tutorial.html">Tutorials</a>
+    <a href="../../blog/blog.html">Blog</a>
+    <a href="../note/notes.html">Notes</a>
+    <a href="../../contact/contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="lang-hero">
+  <h1>PHP Programming Tutorial</h1>
+  <p>Beginner to Advanced • Web Development • Dynamic Websites</p>
+</section>
+
+<!-- ===== CONTENT WRAPPER ===== -->
+<section class="lang-container">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <h3>PHP Topics</h3>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#install">Installation</a></li>
+      <li><a href="#syntax">Syntax</a></li>
+      <li><a href="#variables">Variables & Data Types</a></li>
+      <li><a href="#operators">Operators</a></li>
+      <li><a href="#arrays">Arrays</a></li>
+      <li><a href="#functions">Functions</a></li>
+      <li><a href="#loop">Loops & Control</a></li>
+      <li><a href="#form">Form Handling</a></li>
+      <li><a href="#questions">Practice Questions</a></li>
+    </ul>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="content">
+
+    <h2 id="intro">Introduction to PHP</h2>
+    <p class="text">
+      PHP (Hypertext Preprocessor) is a server-side scripting language designed for web development.
+      It is widely used to create dynamic web pages, handle forms, and interact with databases.
+
+      What is XAMPP?
+        XAMPP is a free software package that includes:
+        X → Cross-platform
+        A → Apache (server)
+        M → MySQL / MariaDB (database)
+        P → PHP
+        P → Perl
+        👉 Installing XAMPP = PHP is installed automatically.
+    </p>
+
+    <h2 id="install">Installation</h2>
+    <p class="text">
+      You can install PHP locally using XAMPP, WAMP, or MAMP.
+      For more details open PDF:
+      <a href="phpinstall.pdf" target="_blank">Open PDF</a>
+      <a href="phpinstall.pdf" download>Download PDF</a>
+    </p>
+
+    <h2 id="syntax">PHP Syntax</h2>
+    <p class="text">
+      PHP code is embedded within HTML using <code>&lt;?php ... ?&gt;</code> tags.
+      Each statement ends with a semicolon (;).
+    </p>
+
+    <h2>Sample PHP Program</h2>
+    <pre><code>
+&lt;?php
+  echo "Hello ChituBytes!";
+?&gt;
+    </code></pre>
+    <button class="copy-btn" onclick="copyPHPCode()">Copy Code</button>
+
+    <h2 id="variables">Variables in PHP</h2>
+    <p class="text">
+      Variables start with a $ sign and are used to store data.
+      Example: 
+        $name = "ChituBytes";  // strind data type
+        $num = 10;             // integer data type
+
+      for detailed click here:
+      <a href="phpvariables.pdf" target="_blank">Open PDF</a>
+      <a href="phpvariables.pdf" download>Download PDF</a>
+    </p>
+
+    <h2>Example Variable Program</h2>
+    <pre><code>
+&lt;?php
+  $a = 10;
+  $b = 20;
+  $sum = $a + $b;
+  echo "Sum = ".$sum;
+?&gt;
+    </code></pre>
+    <button class="copy-btn" onclick="copyPHPCode2()">Copy Code</button>
+
+    <h2 id="operators">Operators</h2>
+    <p class="text">
+      What are PHP Operators?
+
+        Operators are symbols used to perform operations on variables and values.
+        Types of PHP Operators
+            1.	Arithmetic Operators
+            2.	Assignment Operators
+            3.	Comparison Operators
+            4.	Logical Operators
+            5.	Increment / Decrement Operators
+            6.	String Operators
+            7.	Conditional (Ternary) Operator
+        
+        for detailed click here:
+        <a href="php_operators.pdf" target="_blank">Open PDF</a>
+        <a href="php_operators.pdf" download>Download PDF</a>
+    </p>
+
+
+    <h2 id="arrays">Arrays in PHP</h2>
+    <p class="text">
+      PHP arrays store multiple values in a single variable.
+      Example: 
+              $colors = array("Red", "Green", "Blue");
+      
+      for detailed click here:
+      <a href="php_array.pdf" target="_blank">Open PDF</a>
+      <a href="php_array.pdf" download>Download PDF</a>
+    </p>
+
+    <h2 id="functions">Functions</h2>
+    <p class="text">
+      Functions are reusable blocks of code. we wrire once and use multople time.
+
+      Why Use Functions?
+      •	Avoid repetition of code
+      •	Improve readability
+      •	Easy to maintain and debug
+       Syntax of Function
+            
+          function functionName() {
+                // code
+            }
+
+      for detailed click here:
+      <a href="php_functions.pdf" target="_blank">Open PDF</a>
+      <a href="php_functions.pdf" download>Download PDF</a>
+      </p>
+
+      <pre><code>
+&lt;?php
+function greet($name) {
+  echo "Hello ".$name;
+}
+greet("ChituBytes");
+?&gt;
+      </code></pre>
+    </p>
+    <h2 id="questions">Practice Questions</h2>
+    <p class="text">
+        You must need to practice these questions
+        Download this PDF
+        <a href="phpquestions.pdf" target="_blank">Open PDF</a>
+        <a href="phpquestions.pdf" download>Download PDF</a>
+    </p>
+
+    <h2 id="loop">Looping And Control Statements </h2>
+    <p class="text">
+      What is Looping in PHP?
+        Looping is used to execute a block of code repeatedly until a given condition is satisfied.
+
+        Types of Loops in PHP:
+        PHP mainly supports 4 types of loops:
+          1.for loop
+          2.while loop
+          3.do...while loop
+          4.foreach loop
+         
+          for detailed click here:
+          <a href="php_loop.pdf" target="_blank">Open PDF</a>
+          <a href="php_loop.pdf" download>Download PDF</a>
+    </p>
+
+    <h2 id="form">Form Handling in PHP</h2>
+
+    <p class="text">
+      What is Form Handling in PHP?
+          Form handling in PHP is the process of collecting user input from HTML forms and processing it using PHP.
+
+        🔹 Basic Steps of Form Handling
+              1.Create HTML Form
+              2.Send data using GET or POST
+              3.Receive data using PHP superglobal variables
+          For details click here:
+          <a href="php_form.pdf" target="_blank">Open PDF</a>
+          <a href="php_form.pdf" download>Download PDF</a>
+    </p>
+
+    <h2 id="questions">Download PHP Practice Questions</h2>
+      <p class="text">
+         more than 100s of Questions:
+        <a href="php_questions.pdf" target="_blank">Open PDF</a>
+        <a href="php_questions.pdf" download>Download PDF</a>
+      </p>
+
+
+    <h2>Download Notes</h2>
+    <a class="download" href="#">📄 PHP Short Notes (PDF)</a>
+    <a class="download" href="#">📘 PHP Programs PDF</a>
+
+  </main>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 ChituBytes • Learn Coding the Right Way
+</footer>
+
+<script>
+function copyPHPCode() {
+  navigator.clipboard.writeText('<?php echo "Hello ChituBytes!"; ?>');
+  alert("Code copied!");
+}
+
+function copyPHPCode2() {
+  navigator.clipboard.writeText('<?php $a=10; $b=20; $sum=$a+$b; echo "Sum=".$sum; ?>');
+  alert("Code copied!");
+}
+</script>
+
+</body>
+</html>
